@@ -7,3 +7,5 @@ Repositorio para códigos de matématica e programação
 [Maria](https://github.com/victoralmeida432/Mat-Prog/blob/master/SitemasLineares/MetododeLU.py)
 
 [Victor](https://github.com/victoralmeida432/Mat-Prog/blob/master/ZeroDaFuncaoReal/Metodo_De_Newton-Rapshon.py)
+
+[TODOSJUNTOS]()

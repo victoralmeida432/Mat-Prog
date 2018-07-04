@@ -1,7 +1,8 @@
 #               Metodo de Newton                  
 import math
-#cria a funcao(x) = x**3 - 9x + 3 
+#dizer que defini uma funcao(x) qualquer para testar lógica
 #lembrar que as funções pode mudar depende da função desejada
+#cria a funcao(x) = x**3 - 9x + 3 
 def funcao (xo):
   return (pow(xo,3)) - (9 * xo) + 3
 

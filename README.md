@@ -6,4 +6,4 @@ Repositorio para códigos de matématica e programação
 
 [Maria]
 
-[Victor]
+[Victor]https://github.com/victoralmeida432/Mat-Prog/blob/master/ZeroDaFuncaoReal/Metodo_De_Newton-Rapshon.py

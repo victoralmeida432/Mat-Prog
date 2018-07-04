@@ -1,62 +1,21 @@
-#               Metodo de Newton                  
-import math
-#dizer que defini uma funcao(x) qualquer para testar lógica
-#lembrar que as funções pode mudar depende da função desejada
-#cria a funcao(x) = x**3 - 9x + 3 
-def funcao (xo):
-  return (pow(xo,3)) - (9 * xo) + 3
+from sympy import *
+from math import *
+#define x como o symbol devido a biblioteca sympy
+x=Symbol('x')
+#pede o F(x)
+fx=sympify(input('Digite função F(x): '))
+#Pede o erro, ou precisão do usuario
+precisao = float(input('Digite a precisão da resposta: '))
+#pede a primeira estimativa do x0
+x0=float(input('Digite o x0: '))
 
-#cria a derivada da funcao(x). 3x**2 - 9
-#derivada varia conforme a função desejada
-def funcaoLinha(xo):
+df=fx.diff(x)
 
-   return (3 * math.pow(xo,2)) - 9
-
-#Leitura dos dados
-
-#Le o valor inicial de x      
-
-xo = float(input("Digite o valor de x0: "))
-
-#Le precisao 1
-precisao1 = float(input("Precisao1: "))
-
-#Le precisao 2
-precisao2 = float(input("Precisao2: "))
-print ('\n')
-
-if (math.fabs(funcao(xo))) < precisao1:
-
-   xBarra = xo   
-
-else:
-
-   k = 1
-
-   flag = True
-
-   while flag:
-
-      x1 = xo - (funcao(xo) / funcaoLinha(xo))
-
-      print ("Iteracao: %d" % (k))
-
-      print ("Valor de X: %f" % (x1))
-
-      print ("f(x): %f" % (funcao(x1)))
-
-      print ('\n')
-
-      if (math.fabs(funcao(x1))) < precisao1 or (math.fabs(x1 - xo)) < precisao2:
-
-         xBarra = x1
-
-         flag = False
-
-      xo = x1
-
-      k = k + 1
-
-#Resultado final. Valor de xBarra      
-
-print ('Valor de xBarra: %f' % (xBarra))
+while True:
+	x1=x0-(fx.subs(x,x0)/df.subs(x,x0))
+	x0=x1-(fx.subs(x,x1)/df.subs(x,x1))
+	print('{} - {} = {}'.format(x1,x0,abs(x1-x0)))
+	if abs(x1-x0) <= precisao:
+		print('FIM!')
+		print('O zero da função está em: {}'.format(x0))
+		break

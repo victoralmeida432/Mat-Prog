@@ -1,11 +1,12 @@
-#               Metodo de Newton                
-# importa o modulo math  
+#               Metodo de Newton                  
 import math
 #cria a funcao(x) = x**3 - 9x + 3 
+#lembrar que as funções pode mudar depende da função desejada
 def funcao (xo):
   return (pow(xo,3)) - (9 * xo) + 3
 
 #cria a derivada da funcao(x). 3x**2 - 9
+#derivada varia conforme a função desejada
 def funcaoLinha(xo):
 
    return (3 * math.pow(xo,2)) - 9

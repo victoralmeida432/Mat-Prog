@@ -4,6 +4,6 @@ Repositorio para códigos de matématica e programação
 
 [Caio](https://github.com/victoralmeida432/Mat-Prog/blob/master/Interpolacao/Lagrange.py)
 
-[Maria]
+[Maria](https://github.com/victoralmeida432/Mat-Prog/blob/master/SitemasLineares/MetododeLU.py)
 
 [Victor](https://github.com/victoralmeida432/Mat-Prog/blob/master/ZeroDaFuncaoReal/Metodo_De_Newton-Rapshon.py)

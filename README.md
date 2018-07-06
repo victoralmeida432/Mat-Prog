@@ -1,6 +1,6 @@
 # Mat-Prog
 
-- Nesse repositório você irá encontrar os códigos para o trabalho de matématica e programação
+- Nesse repositório você irá encontrar os códigos para o trabalho de matématica e programação do 'Grupo E (MARS) 2018.1'
 
 [Arthur](https://github.com/victoralmeida432/Mat-Prog/blob/master/SitemasLineares/Metodo%20de%20Jacobi.py)
 
